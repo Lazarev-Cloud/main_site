@@ -56,7 +56,7 @@ const PrivacyPolicy: React.FC = () => {
                     className="text-indigo-600 underline"
                   >
                     https://lazarev.cloud
-                  </a>, and associated platforms (collectively, the "Site").
+                  </a>, and associated platforms (collectively, the &quot;Site&quot;).
                 </p>
 
                 <Accordion title="1. Collection of Your Information">
@@ -151,7 +151,7 @@ const PrivacyPolicy: React.FC = () => {
 
                 <Accordion title="8. Controls for Do-Not-Track Features">
                   <p>
-                    Most web browsers and some mobile operating systems include a Do-Not-Track ("DNT") feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected.
+                    Most web browsers and some mobile operating systems include a Do-Not-Track (&quot;DNT&quot;) feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected.
                   </p>
                   <p>
                     As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online.
@@ -186,7 +186,7 @@ const PrivacyPolicy: React.FC = () => {
 
                 <Accordion title="12. Changes to This Policy">
                   <p>
-                    We may update this Privacy Policy from time to time. We will notify you of any changes by updating the "Last updated" date at the top of this Privacy Policy.
+                    We may update this Privacy Policy from time to time. We will notify you of any changes by updating the &quot;Last updated&quot; date at the top of this Privacy Policy.
                   </p>
                   <p>
                     You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.

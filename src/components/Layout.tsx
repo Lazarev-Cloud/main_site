@@ -22,13 +22,24 @@ const Layout: React.FC<LayoutProps> = ({ children, title = 'Lazarev.Cloud' }) =>
           <div className="flex justify-between h-16">
             <div className="flex">
               <Link href="/" className="flex-shrink-0 flex items-center">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 md:h-6 md:w-6" data-id="16">
-              <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
-            </svg>
+                <svg 
+                  xmlns="http://www.w3.org/2000/svg" 
+                  width="24" 
+                  height="24" 
+                  viewBox="0 0 24 24" 
+                  fill="none" 
+                  stroke="currentColor" 
+                  strokeWidth="2" 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  className="h-5 w-5 md:h-6 md:w-6" 
+                  data-id="16"
+                >
+                  <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+                </svg>
                 <span className="ml-2 text-xl font-bold">Lazarev.Cloud</span>
               </Link>
-            </div>
-            <div className="flex items-center">
+            </div>            <div className="flex items-center">
               <Link href="/apps" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Our Apps</Link>
               <Link href="/humans" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">For Humans</Link>
               <Link href="/business" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">For Business</Link>

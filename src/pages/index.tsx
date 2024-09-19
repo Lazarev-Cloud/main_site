@@ -1,6 +1,5 @@
-// src/pages/index.tsx
 import React from "react";
-import Layout from "@/components/Layout";
+import Layout from "../components/Layout";
 import Link from "next/link";
 
 const Home: React.FC = () => {
@@ -40,7 +39,7 @@ const Home: React.FC = () => {
                 Solutions for Everyone
               </h2>
               <p className="mt-3 max-w-3xl text-lg text-gray-500">
-                Whether you're an individual looking to boost your productivity
+                Whether you&apos;re an individual looking to boost your productivity
                 or a business aiming to optimize operations, we have the perfect
                 solution for you.
               </p>
@@ -63,7 +62,9 @@ const Home: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2"></div>
+            <div className="mt-8 grid grid-cols-2 gap-0.5 md:grid-cols-3 lg:mt-0 lg:grid-cols-2">
+              {/* You can add images or icons here to represent your services */}
+            </div>
           </div>
         </div>
       </div>
