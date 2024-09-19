@@ -40,7 +40,7 @@ const Home: React.FC = () => {
                 Solutions for Everyone
               </h2>
               <p className="mt-3 max-w-3xl text-lg text-gray-500">
-                Whether you're an individual looking to boost your productivity
+                Whether you&lsquo;re an individual looking to boost your productivity
                 or a business aiming to optimize operations, we have the perfect
                 solution for you.
               </p>
