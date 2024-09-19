@@ -1,7 +1,7 @@
 // src/pages/business.tsx
 import React from 'react';
-import Layout from '@/components/Layout';
-import Card from '@/components/Card';
+import Layout from '../components/Layout';
+import Card from '../components/Card';
 import { ChartBarIcon, ChatBubbleLeftRightIcon, RectangleStackIcon, ShieldCheckIcon, UsersIcon, CubeTransparentIcon } from '@heroicons/react/24/outline';
 
 const Business: React.FC = () => {
@@ -20,7 +20,7 @@ const Business: React.FC = () => {
         <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
           <div className="lg:text-center">
             <h2 className="text-base text-black font-semibold tracking-wide uppercase">For Business</h2>
-            <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            <p className="mt-2 text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
               Transforming Enterprises
             </p>
             <p className="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
