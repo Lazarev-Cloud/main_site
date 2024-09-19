@@ -1,7 +1,8 @@
 // src/components/Layout.tsx
-import React from 'react';
+import React, { useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -9,12 +10,15 @@ interface LayoutProps {
 }
 
 const Layout: React.FC<LayoutProps> = ({ children, title = 'Lazarev.Cloud' }) => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <div className="flex flex-col min-h-screen">
       <Head>
         <title>{title}</title>
         <meta name="description" content="AI and SaaS applications for humans and businesses" />
         <link rel="icon" href="https://cdn.lazarev.cloud/small_logo.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
       <header className="bg-white shadow-sm">
@@ -39,14 +43,39 @@ const Layout: React.FC<LayoutProps> = ({ children, title = 'Lazarev.Cloud' }) =>
                 </svg>
                 <span className="ml-2 text-xl font-bold">Lazarev.Cloud</span>
               </Link>
-            </div>            <div className="flex items-center">
+            </div>
+            <div className="hidden md:flex md:items-center">
               <Link href="/apps" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Our Apps</Link>
               <Link href="/humans" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">For Humans</Link>
               <Link href="/business" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">For Business</Link>
               <a href="https://n8n.lazarev.cloud/form/contact-form" className="ml-8 inline-flex items-center justify-center px-4 py-2 border border-black rounded-md shadow-sm text-sm font-medium text-black bg-white hover:bg-black hover:text-white">Contact</a>
             </div>
+            <div className="flex items-center md:hidden">
+              <button
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-black"
+              >
+                <span className="sr-only">Open main menu</span>
+                {isMenuOpen ? (
+                  <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
+                ) : (
+                  <Bars3Icon className="block h-6 w-6" aria-hidden="true" />
+                )}
+              </button>
+            </div>
           </div>
         </nav>
+
+        {isMenuOpen && (
+          <div className="md:hidden">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              <Link href="/apps" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Our Apps</Link>
+              <Link href="/humans" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">For Humans</Link>
+              <Link href="/business" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">For Business</Link>
+              <a href="https://n8n.lazarev.cloud/form/contact-form" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Contact</a>
+            </div>
+          </div>
+        )}
       </header>
 
       <main className="flex-grow">
@@ -55,8 +84,8 @@ const Layout: React.FC<LayoutProps> = ({ children, title = 'Lazarev.Cloud' }) =>
 
       <footer className="bg-gray-50">
         <div className="max-w-7xl mx-auto py-3 px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center">
-            <p className="text-base text-gray-500">&copy; 2024 Lazarev.Cloud. All rights reserved.</p>
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <p className="text-base text-gray-500 mb-2 md:mb-0">&copy; 2024 Lazarev.Cloud. All rights reserved.</p>
             <Link href="/privacy" className="text-base text-gray-500 hover:text-gray-900">
               Privacy Policy
             </Link>
