@@ -23,7 +23,7 @@ const NotFound: React.FC = () => {
                   Go back home
                 </Link>
                 <a
-                  href="https://n8n.lazarev.cloud/form/contact-form"
+                  href="https://youtrack.lazarev.cloud/form/0d2ad302-4d7e-4ef8-9f66-7663602763d4"
                   className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-black bg-gray-100 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500 transition-colors duration-300"
                 >
                   Contact support

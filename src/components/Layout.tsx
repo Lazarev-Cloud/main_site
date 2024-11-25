@@ -51,7 +51,7 @@ const Layout: React.FC<LayoutProps> = ({ children, title = 'Lazarev.Cloud' }) =>
               <Link href="/apps" className="text-sm font-medium text-gray-700 hover:text-gray-900">Our Apps</Link>
               <Link href="/humans" className="text-sm font-medium text-gray-700 hover:text-gray-900">For Humans</Link>
               <Link href="/business" className="text-sm font-medium text-gray-700 hover:text-gray-900">For Business</Link>
-              <a href="https://n8n.lazarev.cloud/form/contact-form" className="ml-8 inline-flex items-center px-4 py-2 border border-black rounded-md shadow-sm text-sm font-medium text-black bg-white hover:bg-black hover:text-white transition-colors duration-300">Contact</a>
+              <a href="https://youtrack.lazarev.cloud/form/0d2ad302-4d7e-4ef8-9f66-7663602763d4" className="ml-8 inline-flex items-center px-4 py-2 border border-black rounded-md shadow-sm text-sm font-medium text-black bg-white hover:bg-black hover:text-white transition-colors duration-300">Contact</a>
             </div>
             <div className="flex items-center md:hidden">
               <button
@@ -75,7 +75,7 @@ const Layout: React.FC<LayoutProps> = ({ children, title = 'Lazarev.Cloud' }) =>
               <Link href="/apps" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Our Apps</Link>
               <Link href="/humans" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">For Humans</Link>
               <Link href="/business" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">For Business</Link>
-              <a href="https://n8n.lazarev.cloud/form/contact-form" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Contact</a>
+              <a href="https://youtrack.lazarev.cloud/form/0d2ad302-4d7e-4ef8-9f66-7663602763d4" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Contact</a>
             </div>
           </div>
         )}
