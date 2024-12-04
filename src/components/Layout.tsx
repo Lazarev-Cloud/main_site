@@ -1,13 +1,15 @@
-// src/components/Layout.tsx
 import React, { useState } from 'react';
 import Head from 'next/head';
 import Link from 'next/link';
+import Script from 'next/script';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 interface LayoutProps {
   children: React.ReactNode;
   title?: string;
 }
+
+const GA_MEASUREMENT_ID = 'G-DT39S71G8J';
 
 const Layout: React.FC<LayoutProps> = ({ children, title = 'Lazarev.Cloud' }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,16 +25,22 @@ const Layout: React.FC<LayoutProps> = ({ children, title = 'Lazarev.Cloud' }) =>
         <meta name="description" content="AI and SaaS applications for humans and businesses" />
         <link rel="icon" href="https://cdn.lazarev.cloud/small_logo.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-DT39S71G8J"></script>
-        <script>
+      </Head>
+
+      {/* Google Analytics */}
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
 
-          gtag('config', 'G-DT39S71G8J');
-        </script>
-      </Head>
+          gtag('config', '${GA_MEASUREMENT_ID}');
+        `}
+      </Script>
 
       <header className="bg-white shadow-sm">
         <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
