@@ -21,6 +21,7 @@ const Layout: React.FC<LayoutProps> = ({ children, title = 'Lazarev.Cloud' }) =>
   return (
     <div className="flex flex-col min-h-screen">
       <Head>
+        <meta httpEquiv="content-language" content="en" />
         <title>{title}</title>
         <meta name="description" content="AI and SaaS applications for humans and businesses" />
         <link rel="icon" href="https://cdn.lazarev.cloud/small_logo.svg" />
