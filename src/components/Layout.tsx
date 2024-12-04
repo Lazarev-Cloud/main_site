@@ -23,6 +23,15 @@ const Layout: React.FC<LayoutProps> = ({ children, title = 'Lazarev.Cloud' }) =>
         <meta name="description" content="AI and SaaS applications for humans and businesses" />
         <link rel="icon" href="https://cdn.lazarev.cloud/small_logo.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-DT39S71G8J"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-DT39S71G8J');
+        </script>
       </Head>
 
       <header className="bg-white shadow-sm">
@@ -30,17 +39,17 @@ const Layout: React.FC<LayoutProps> = ({ children, title = 'Lazarev.Cloud' }) =>
           <div className="flex justify-between h-16">
             <div className="flex items-center">
               <Link href="/" className="flex-shrink-0 flex items-center">
-                <svg 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  width="24" 
-                  height="24" 
-                  viewBox="0 0 24 24" 
-                  fill="none" 
-                  stroke="currentColor" 
-                  strokeWidth="2" 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round" 
-                  className="h-6 w-6" 
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="h-6 w-6"
                 >
                   <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
                 </svg>
